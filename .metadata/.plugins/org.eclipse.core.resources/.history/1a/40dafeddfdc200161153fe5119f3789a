@@ -1,0 +1,20 @@
+package com.infy.formCreation;
+
+import javax.swing.JFrame;
+
+import com.infy.formCreation.RowElement;
+public class Main {
+	public static void main (String args[]){
+		
+		JFrame jframe = new JFrame();
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jframe.setSize(400,400);
+        jframe.setLocation(200,200);
+        
+        jframe.setVisible(true);
+		
+		
+		
+	}
+
+}

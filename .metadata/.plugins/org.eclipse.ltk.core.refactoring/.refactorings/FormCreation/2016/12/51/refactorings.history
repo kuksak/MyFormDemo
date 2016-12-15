@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.infy.formCreation.PanelCreation&apos; to &apos;TreeCreation&apos;&#x0D;&#x0A;- Original project: &apos;FormCreation&apos;&#x0D;&#x0A;- Original element: &apos;com.infy.formCreation.PanelCreation&apos;&#x0D;&#x0A;- Renamed element: &apos;com.infy.formCreation.TreeCreation&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PanelCreation&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.infy.formCreation{PanelCreation.java[PanelCreation" matchStrategy="1" name="TreeCreation" qualified="false" references="true" similarDeclarations="false" stamp="1481833274213" textual="false" version="1.0"/>
+</session>

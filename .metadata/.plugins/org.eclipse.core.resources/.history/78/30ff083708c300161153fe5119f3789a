@@ -1,0 +1,33 @@
+package com.infy.formCreation;
+
+import javax.swing.GroupLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JTree;
+import com.infy.formCreation.TreeCreation;
+import com.infy.trial.CustomRenderer;
+
+public class Main {
+	public static void main (String args[]){
+		JTree jTree;
+		
+		JFrame jframe = new JFrame();
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jframe.setSize(400,400);
+        jframe.setLocation(200,200);
+        
+        TreeCreation tree = new TreeCreation();
+        
+        jTree=tree.treeCreation();
+        jTree.setCellRenderer(new CustomRenderer(jTree));
+    	
+        jframe.add(jTree);
+        jframe.setVisible(true);
+		
+		
+		
+	}
+
+}

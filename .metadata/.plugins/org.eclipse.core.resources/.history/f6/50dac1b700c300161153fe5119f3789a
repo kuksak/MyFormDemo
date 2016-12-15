@@ -1,0 +1,28 @@
+package com.infy.formCreation;
+
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import com.infy.formCreation.RowElement;
+public class PanelCreation {
+	
+	
+	JLabel address = new JLabel("Address");
+	JTextField addressLine = new JTextField("Enter address");
+	JTextField country = new JTextField("country");
+	JTextField district = new JTextField("district");
+	
+	RowElement row1 = new RowElement(address,addressLine,country,district);
+	JPanel panel1=row1.setPanel();
+	
+	
+	JLabel homeAddress = new JLabel("Home Address");
+	JTextField homeAddressLine = new JTextField("Enter home address");
+	JTextField homeCountry = new JTextField("country");
+	JTextField homeDistrict = new JTextField("district");
+	
+	RowElement row2 = new RowElement(homeAddress,homeAddressLine,country,district);
+	JPanel panel2=row2.setPanel();
+}

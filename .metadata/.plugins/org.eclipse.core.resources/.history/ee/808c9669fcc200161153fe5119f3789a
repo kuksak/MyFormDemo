@@ -1,0 +1,19 @@
+package com.infy.formCreation;
+
+import java.awt.GridLayout;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class RowElement {
+	
+	JPanel jpanel = new JPanel(new GridLayout(1,4));
+	
+	JLabel address = new JLabel("Address");
+	JTextField addressLine = new JTextField();
+	JTextField country = new JTextField();
+	JTextField district = new JTextField();
+	
+
+}

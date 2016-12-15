@@ -1,0 +1,50 @@
+package com.infy.formCreation;
+
+import java.awt.Container;
+import java.awt.GridBagLayout;
+
+import javax.swing.GroupLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JTree;
+import javax.swing.SpringLayout;
+
+import com.infy.formCreation.TreeCreation;
+import com.infy.formCreation.CustomRenderer;
+
+public class Main {
+	public static void main (String args[]){
+	
+			JTree jTree;
+			
+			
+			JLabel username = new JLabel("Name");
+			JTextField  usernameText = new JTextField();
+			
+			JFrame jframe = new JFrame();
+			jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        jframe.setSize(400,400);
+	       
+	        jframe.setLocation(400,250);
+	        
+	        TreeCreation tree = new TreeCreation();
+	        
+	        jTree=tree.treeCreation();
+	        jTree.setCellRenderer(new CustomRenderer(jTree));
+	        
+	        Container contentPane = jframe.getContentPane();
+	        SpringLayout layout = new SpringLayout();
+	        contentPane.setLayout(layout);
+	        contentPane.add(new JLabel("Name "));
+	        contentPane.add(new JTextField("Text field", 15));
+	        contentPane.add(jTree);
+	    	
+	        //jframe.add(jTree);
+	        jframe.setVisible(true);
+		
+		
+	}
+
+}
